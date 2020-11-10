@@ -1,0 +1,102 @@
+SELECT DISTINCT ?plan ?destination ?goal ?task ?taskObject  ?referObj ?taskObElement ?obPropType ?taskObElementType ?taskOpElement ?taskOpArgElement ?referInp ?taskInpElement ?aInpProp ?aInpValue ?inpPropType ?taskInpElementType ?referOut ?taskOutElement ?aOutProp ?aOutValue ?outPropType ?taskOutElementType
+WHERE
+{   
+   ?requester  oasis:requests ?plan.   
+   ?plan a oasis:PlanDescription.
+   OPTIONAL{
+      ?plan oasis:requestedTo ?destination.
+   }
+   ?plan oasis:consistsOfGoalDescription ?goal.
+   ?goal oasis:consistsOfTaskDescription ?task .
+
+   ?task oasis:hasTaskObject ?taskObject .   
+   ?taskObject ?referObj ?taskObElement .
+   FILTER (?referObj =  oasis:refersExactlyTo || ?referObj =  oasis:refersAsNewTo )
+   ?taskObElement ?obPropType ?taskObElementType .  
+   {
+    SELECT  ?obPropType 
+    WHERE
+    { 
+     ?obPropType rdfs:subPropertyOf oasis:hasType.            
+    }
+   }
+   UNION
+   {
+     {
+        SELECT  ?obPropType 
+        WHERE
+         { 
+           ?obPropType a owl:ObjectProperty.
+            FILTER (?obPropType = oasis:hasType)
+         }           
+      }
+    }
+
+   ?task oasis:hasTaskOperator ?taskOperator .
+   ?taskOperator oasis:refersExactlyTo ?taskOpElement .
+   
+
+   OPTIONAL
+   {
+     ?task oasis:hasTaskOperatorArgument ?taskOperatorArgument .
+     ?taskOperatorArgument oasis:refersExactlyTo ?taskOpArgElement .     
+   }
+   
+   OPTIONAL
+   {
+     ?task oasis:hasTaskActualInputParameter ?taskInputParameter .
+     ?taskInputParameter ?referInp ?taskInpElement .
+     FILTER (?referInp =  oasis:refersExactlyTo || ?referInp =  oasis:refersAsNewTo )
+     ?taskInpElement ?aInpProp ?aInpValue . 
+     ?taskInpElement ?inpPropType ?taskInpElementType. 
+
+
+     {
+       SELECT  ?inPropType 
+       WHERE
+       { 
+         ?inPropType rdfs:subPropertyOf oasis:hasType.            
+        }
+     }
+     UNION
+     {
+       {
+        SELECT  ?inPropType 
+        WHERE
+         { 
+           ?inPropType a owl:ObjectProperty.
+            FILTER (?inPropType = oasis:hasType)
+         }           
+      }
+    }
+
+   }
+
+   OPTIONAL
+   {
+     ?task oasis:hasTaskActualOutputParameter ?taskOutputParameter .
+     ?taskOutputParameter ?referOut ?taskOutElement .
+     FILTER (?referOut =  oasis:refersExactlyTo || ?referOut =  oasis:refersAsNewTo )
+     ?taskIoutElement ?aOutProp ?aOutValue .
+     ?taskIoutElement ?outPropType ?taskOutElementType.
+    
+       {
+       SELECT  ?outPropType 
+       WHERE
+       { 
+         ?outPropType rdfs:subPropertyOf oasis:hasType.            
+        }
+     }
+     UNION
+     {
+       {
+        SELECT  ?outPropType 
+        WHERE
+         { 
+           ?outPropType a owl:ObjectProperty.
+            FILTER (?inPropType = oasis:hasType)
+         }           
+      }
+    }
+   }
+}

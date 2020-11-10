@@ -1,0 +1,8 @@
+{
+//agent// oasis:hasConfiguration ?custConf.
+}
+UNION
+{
+  //theobject// oasis:hasConfiguration ?custConf.
+}
+?custConf oasis:setsUp ?subConf.

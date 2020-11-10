@@ -1,0 +1,8 @@
+//agent// oasis:hasConfiguration ?conconf .
+?conconf oasis:hasConnection ?aconnect .
+?conconf rdf:type owl:NamedIndividual .
+?aconnect rdf:type owl:NamedIndividual .
+?aconnect oasis:hasIPAddress ?ipaddr.
+?aconnect oasis:hasPortNumber ?port.
+oasis:hasIPAddress a owl:DatatypeProperty.
+oasis:hasPortNumber a owl:DatatypeProperty.

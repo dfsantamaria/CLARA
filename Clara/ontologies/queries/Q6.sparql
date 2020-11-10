@@ -1,0 +1,19 @@
+  ?taskoElem ?oElemTypeProp ?oElemType .
+   {
+    SELECT  ?oElemType
+    WHERE
+    { 
+        VALUES ?oElemType { //list//  }      
+    }
+   }
+   UNION
+   {
+     {
+        SELECT  ?oElemType 
+        WHERE
+         { 
+           ?obPropType a owl:ObjectProperty.
+           FILTER(?oElemTypeProp=oasis:hasType)
+         }           
+      }
+    }

@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.dmi.unict.it/oasis-abox.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.dmi.unict.it/oasis-abox.owl">
+    <Prefix name="" IRI="http://www.dmi.unict.it/oasis-abox.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.dmi.unict.it/oasis.owl</Import>
+    <Declaration>
+        <Class IRI="#OperatorArgumentType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#add"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#belief_description_object_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#check"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#device_configuration_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#device_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#equal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#execute"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#exists"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#failed_status_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#generalRequest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#generalUtterance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#greatherEqual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#greatherThan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#home_object_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#install"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#installation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lessEqual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lessThan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#light_component_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ontology_description_object_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#parse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#remove"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#retrieve"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#software_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#spaceSpan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#succeded_status_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#timeSpan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#uninstall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#update"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#user_configuration_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#user_type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#LightComponentType"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#OperatorArgumentType"/>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#Type"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskOperator"/>
+        <NamedIndividual IRI="#add"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#InformationObjectType"/>
+        <NamedIndividual IRI="#belief_description_object_type"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskOperator"/>
+        <NamedIndividual IRI="#check"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#ConfigurationType"/>
+        <NamedIndividual IRI="#device_configuration_type"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#AgentType"/>
+        <NamedIndividual IRI="#device_type"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#DataOperator"/>
+        <NamedIndividual IRI="#equal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskOperator"/>
+        <NamedIndividual IRI="#execute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#ExistentialOperator"/>
+        <NamedIndividual IRI="#exists"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#FailedStatusType"/>
+        <NamedIndividual IRI="#failed_status_type"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#RequestType"/>
+        <NamedIndividual IRI="#generalRequest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#RequestType"/>
+        <NamedIndividual IRI="#generalUtterance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#DataOperator"/>
+        <NamedIndividual IRI="#greatherEqual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#DataOperator"/>
+        <NamedIndividual IRI="#greatherThan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#HomeObjectType"/>
+        <NamedIndividual IRI="#home_object_type"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskOperator"/>
+        <NamedIndividual IRI="#install"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#OperatorArgument"/>
+        <NamedIndividual IRI="#installation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#DataOperator"/>
+        <NamedIndividual IRI="#lessEqual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#DataOperator"/>
+        <NamedIndividual IRI="#lessThan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#LightComponentType"/>
+        <NamedIndividual IRI="#light_component_type"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#OntologyDescriptionObjectType"/>
+        <NamedIndividual IRI="#ontology_description_object_type"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskOperator"/>
+        <NamedIndividual IRI="#parse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskOperator"/>
+        <NamedIndividual IRI="#remove"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskOperator"/>
+        <NamedIndividual IRI="#retrieve"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#AgentType"/>
+        <NamedIndividual IRI="#software_type"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#SpaceOperator"/>
+        <NamedIndividual IRI="#spaceSpan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#SuccededStatusType"/>
+        <NamedIndividual IRI="#succeded_status_type"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TimeOperator"/>
+        <NamedIndividual IRI="#timeSpan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskOperator"/>
+        <NamedIndividual IRI="#uninstall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskOperator"/>
+        <NamedIndividual IRI="#update"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#ConfigurationType"/>
+        <NamedIndividual IRI="#user_configuration_type"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#AgentType"/>
+        <NamedIndividual IRI="#user_type"/>
+    </ClassAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#equal</IRI>
+        <Literal>==</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#exists</IRI>
+        <Literal xml:lang="en">exists</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#greatherEqual</IRI>
+        <Literal>&gt;=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#greatherEqual</IRI>
+        <Literal xml:lang="en">greather equal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#greatherThan</IRI>
+        <Literal>&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#greatherThan</IRI>
+        <Literal xml:lang="en">greather</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lessEqual</IRI>
+        <Literal>&lt;=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lessEqual</IRI>
+        <Literal>less equal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lessThan</IRI>
+        <Literal>&lt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lessThan</IRI>
+        <Literal xml:lang="en">less</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#spaceSpan</IRI>
+        <Literal xml:lang="en">space span</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#timeSpan</IRI>
+        <Literal xml:lang="en">time span</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

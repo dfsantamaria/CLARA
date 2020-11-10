@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.dmi.unict.it/add-user-configuration-request.owl"
+     xml:base="http://www.dmi.unict.it/add-user-configuration-request.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oasis="http://www.dmi.unict.it/oasis.owl#">
+    <owl:Ontology rdf:about="http://www.dmi.unict.it/add-user-configuration-request.owl">
+        <owl:imports rdf:resource="http://www.dmi.unict.it/oasis-abox.owl"/>
+        <owl:imports rdf:resource="http://www.dmi.unict.it/oasis.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#consistsOfGoalDescription -->
+
+    <owl:ObjectProperty rdf:about="http://www.dmi.unict.it/oasis.owl#consistsOfGoalDescription"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#consistsOfTaskDescription -->
+
+    <owl:ObjectProperty rdf:about="http://www.dmi.unict.it/oasis.owl#consistsOfTaskDescription"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#hasConfigurationType -->
+
+    <owl:ObjectProperty rdf:about="http://www.dmi.unict.it/oasis.owl#hasConfigurationType"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#hasInformationObjectType -->
+
+    <owl:ObjectProperty rdf:about="http://www.dmi.unict.it/oasis.owl#hasInformationObjectType"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#hasTaskActualInputParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.dmi.unict.it/oasis.owl#hasTaskActualInputParameter"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#hasTaskObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.dmi.unict.it/oasis.owl#hasTaskObject"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#hasTaskOperator -->
+
+    <owl:ObjectProperty rdf:about="http://www.dmi.unict.it/oasis.owl#hasTaskOperator"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.dmi.unict.it/oasis.owl#hasType"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#refersAsNewTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.dmi.unict.it/oasis.owl#refersAsNewTo"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#refersExactlyTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.dmi.unict.it/oasis.owl#refersExactlyTo"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#requests -->
+
+    <owl:ObjectProperty rdf:about="http://www.dmi.unict.it/oasis.owl#requests"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#descriptionProvidedByURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dmi.unict.it/oasis.owl#descriptionProvidedByURL"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#GoalDescription -->
+
+    <owl:Class rdf:about="http://www.dmi.unict.it/oasis.owl#GoalDescription"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#OntologyDescriptionObject -->
+
+    <owl:Class rdf:about="http://www.dmi.unict.it/oasis.owl#OntologyDescriptionObject"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#PlanDescription -->
+
+    <owl:Class rdf:about="http://www.dmi.unict.it/oasis.owl#PlanDescription"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#Space -->
+
+    <owl:Class rdf:about="http://www.dmi.unict.it/oasis.owl#Space"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#TaskActualInputParameter -->
+
+    <owl:Class rdf:about="http://www.dmi.unict.it/oasis.owl#TaskActualInputParameter"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#TaskDescription -->
+
+    <owl:Class rdf:about="http://www.dmi.unict.it/oasis.owl#TaskDescription"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#TaskObject -->
+
+    <owl:Class rdf:about="http://www.dmi.unict.it/oasis.owl#TaskObject"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#TaskOperator -->
+
+    <owl:Class rdf:about="http://www.dmi.unict.it/oasis.owl#TaskOperator"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis.owl#User -->
+
+    <owl:Class rdf:about="http://www.dmi.unict.it/oasis.owl#User"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-conf-taskOperator -->
+
+    <owl:NamedIndividual rdf:about="http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-conf-taskOperator">
+        <rdf:type rdf:resource="http://www.dmi.unict.it/oasis.owl#TaskOperator"/>
+        <oasis:refersExactlyTo rdf:resource="http://www.dmi.unict.it/oasis-abox.owl#add"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-conf-taskinputparameter -->
+
+    <owl:NamedIndividual rdf:about="http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-conf-taskinputparameter">
+        <rdf:type rdf:resource="http://www.dmi.unict.it/oasis.owl#TaskActualInputParameter"/>
+        <oasis:refersAsNewTo rdf:resource="http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-req-ontology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-conf-taskobject -->
+
+    <owl:NamedIndividual rdf:about="http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-conf-taskobject">
+        <rdf:type rdf:resource="http://www.dmi.unict.it/oasis.owl#TaskObject"/>
+        <oasis:refersExactlyTo rdf:resource="http://www.dmi.unict.it/add-user-configuration-request.owl#alan-configuration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-configuration-req-goal -->
+
+    <owl:NamedIndividual rdf:about="http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-configuration-req-goal">
+        <rdf:type rdf:resource="http://www.dmi.unict.it/oasis.owl#GoalDescription"/>
+        <oasis:consistsOfTaskDescription rdf:resource="http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-configuration-req-task"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-configuration-req-plan -->
+
+    <owl:NamedIndividual rdf:about="http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-configuration-req-plan">
+        <rdf:type rdf:resource="http://www.dmi.unict.it/oasis.owl#PlanDescription"/>
+        <oasis:consistsOfGoalDescription rdf:resource="http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-configuration-req-goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-configuration-req-task -->
+
+    <owl:NamedIndividual rdf:about="http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-configuration-req-task">
+        <rdf:type rdf:resource="http://www.dmi.unict.it/oasis.owl#TaskDescription"/>
+        <oasis:hasTaskActualInputParameter rdf:resource="http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-conf-taskinputparameter"/>
+        <oasis:hasTaskObject rdf:resource="http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-conf-taskobject"/>
+        <oasis:hasTaskOperator rdf:resource="http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-conf-taskOperator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-req-ontology -->
+
+    <owl:NamedIndividual rdf:about="http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-req-ontology">
+        <rdf:type rdf:resource="http://www.dmi.unict.it/oasis.owl#OntologyDescriptionObject"/>
+        <oasis:hasInformationObjectType rdf:resource="http://www.dmi.unict.it/oasis-abox.owl#ontology_description_object_type"/>
+        <oasis:descriptionProvidedByURL>ontologies/test/alan-config.owl</oasis:descriptionProvidedByURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.dmi.unict.it/add-user-configuration-request.owl#alan-configuration -->
+
+    <owl:NamedIndividual rdf:about="http://www.dmi.unict.it/add-user-configuration-request.owl#alan-configuration">
+        <oasis:hasConfigurationType rdf:resource="http://www.dmi.unict.it/oasis-abox.owl#user_configuration_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.dmi.unict.it/add-user-configuration-request.owl#alan-task-1-1-1-kitchen -->
+
+    <owl:NamedIndividual rdf:about="http://www.dmi.unict.it/add-user-configuration-request.owl#alan-task-1-1-1-kitchen">
+        <rdf:type rdf:resource="http://www.dmi.unict.it/oasis.owl#Space"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis-abox.owl#add -->
+
+    <owl:NamedIndividual rdf:about="http://www.dmi.unict.it/oasis-abox.owl#add"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis-abox.owl#ontology_description_object_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.dmi.unict.it/oasis-abox.owl#ontology_description_object_type"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis-abox.owl#user_configuration_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.dmi.unict.it/oasis-abox.owl#user_configuration_type"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/oasis-abox.owl#user_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.dmi.unict.it/oasis-abox.owl#user_type"/>
+    
+
+
+    <!-- http://www.dmi.unict.it/ontoas/alan.owl#alan -->
+
+    <owl:NamedIndividual rdf:about="http://www.dmi.unict.it/ontoas/alan.owl#alan">
+        <rdf:type rdf:resource="http://www.dmi.unict.it/oasis.owl#User"/>
+        <oasis:hasType rdf:resource="http://www.dmi.unict.it/oasis-abox.owl#user_type"/>
+        <oasis:requests rdf:resource="http://www.dmi.unict.it/add-user-configuration-request.owl#add-user-configuration-req-plan"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

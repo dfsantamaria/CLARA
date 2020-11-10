@@ -1,0 +1,18 @@
+{
+?taskd oasis:hasTaskFormalOuputParameter ?taskOutParam.
+}
+UNION
+{
+?taskd oasis:hasTaskOutputParameterTemplate ?taskOutParam.	
+}
+
+{
+?taskOutParam oasis:refersExactlyTo ?taskOutElem .
+}
+UNION
+{
+?taskOutParam oasis:refersAsNewTo ?taskOutElem .	
+}
+
+?taskOutElem ?aOutProp ?aOutPropValue.
+VALUES ?aOutProp {//list1//}

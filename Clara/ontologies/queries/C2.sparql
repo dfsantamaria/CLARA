@@ -1,0 +1,3 @@
+//taskexec// oasis:hasTaskOperatorArgument //taskexeoperatorarg// .
+//taskexeoperatorarg// rdf:type oasis:TaskOperatorArgument .
+//taskexeoperatorarg// oasis:refersExactlyTo //param3// .

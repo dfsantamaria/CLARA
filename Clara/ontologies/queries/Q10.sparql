@@ -1,0 +1,7 @@
+OPTIONAL
+{
+//agent// oasis:hasConfiguration ?conconf .
+?conconf oasis:hasConnection ?aconnect .
+?aconnect oasis:hasIPAddress ?ipaddr .
+?aconnect oasis:hasPortNumber ?port .
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.dmi.unict.it/alan-config.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.dmi.unict.it/alan-config.owl#">
+    <Prefix name="" IRI="http://www.dmi.unict.it/alan-config.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="oasis" IRI="http://www.dmi.unict.it/oasis.owl#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Import>http://www.dmi.unict.it/lightagent.owl</Import>
+    <Import>http://www.dmi.unict.it/ontoas/alan.owl</Import>
+    <Declaration>
+        <Class abbreviatedIRI="oasis:Component_Configuration"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="oasis:EnviromentComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="oasis:isCopyOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="alan-device-light1-config"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="alan_kitchen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="main_kitchen_light"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.dmi.unict.it/lightagent.owl#lightagent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#user_configuration_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="oasis:hasType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="oasis:setsUp"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="oasis:isProjectionOf"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="oasis:PhysicalSpace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="oasis:hasSpaceSpan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="oasis:hasConfigurationType"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="oasis:Configuration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="oasis:hasConfiguration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="oasis:configurationProvidedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="oasis:LightObjectType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="oasis:kitchen"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class abbreviatedIRI="oasis:Configuration"/>
+        <NamedIndividual IRI="alan-device-light1-config"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="oasis:PhysicalSpace"/>
+        <NamedIndividual IRI="alan_kitchen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="oasis:EnviromentComponent"/>
+        <NamedIndividual IRI="main_kitchen_light"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="oasis:configurationProvidedBy"/>
+        <NamedIndividual IRI="alan-device-light1-config"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/ontoas/alan.owl#Alan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="oasis:hasConfigurationType"/>
+        <NamedIndividual IRI="alan-device-light1-config"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#user_configuration_type"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="oasis:setsUp"/>
+        <NamedIndividual IRI="alan-device-light1-config"/>
+        <NamedIndividual IRI="main_kitchen_light"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="oasis:hasType"/>
+        <NamedIndividual IRI="alan_kitchen"/>
+        <NamedIndividual abbreviatedIRI="oasis:kitchen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="oasis:hasSpaceSpan"/>
+        <NamedIndividual IRI="main_kitchen_light"/>
+        <NamedIndividual IRI="alan_kitchen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="oasis:hasType"/>
+        <NamedIndividual IRI="main_kitchen_light"/>
+        <NamedIndividual abbreviatedIRI="oasis:LightObjectType"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="oasis:isProjectionOf"/>
+        <NamedIndividual IRI="main_kitchen_light"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/lightagent.owl#lightagent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="oasis:hasConfiguration"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/lightagent.owl#lightagent"/>
+        <NamedIndividual IRI="alan-device-light1-config"/>
+    </ObjectPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

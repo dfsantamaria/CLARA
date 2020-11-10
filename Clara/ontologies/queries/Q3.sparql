@@ -1,0 +1,35 @@
+
+WHERE
+{  
+  {
+   #Agent exploiting behavior template
+   //agent// oasis:adoptsAgentBehaviorTemplate ?behavt.
+   ?behavt a oasis:AgentBehaviorTemplate.
+   ?behavt oasis:hasBehavior ?behav. 
+   ?behav oasis:consistsOfGoalDescription ?goald.
+   ?goald oasis:consistsOfTaskDescription ?taskd.   
+   ?taskd oasis:hasTaskObjectTemplate ?tasko.   
+  }
+  UNION
+  {
+   {
+    #Agent exploiting behavior template by implementing single behavior
+    //agent// oasis:hasBehavior ?behavt.
+    ?behavt oasis:implementsBehavior ?behav.     
+   }
+   UNION
+   {
+    #Agent non exploiting behavior template
+    //agent// oasis:hasBehavior ?behav.  
+    FILTER NOT EXISTS
+    {
+     //agent// a oasis:AgentBehaviorTemplate.
+    }  
+   }
+   ?behav oasis:consistsOfGoalDescription ?goald.
+   ?goald oasis:consistsOfTaskDescription ?taskd.   
+   ?taskd oasis:hasTaskObject ?tasko. 
+  } 
+  #Filtering agent by TaskOperator
+  ?taskd oasis:hasTaskOperator ?taskop.
+  ?taskop oasis:refersExactlyTo //thetaskoperator//.
