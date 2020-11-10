@@ -18,6 +18,7 @@ Documentation:
 
 
 Publications:
+
 -Ontological Smart Contracts in OASIS: Ontology forAgents, Systems, and Integration of Services Domenico Cantone, Carmelo Fabio Longo, Marianna Nicolosi-Asmundo, Daniele Francesco Santamaria, Corrado Santoro
 To app. in: Proceedings of IDC 2021, The 14th International Symposium on Intelligent Distributed Computing, 16-18 September, 2021, Scilla, Reggio Calabria, Italy.
 
@@ -86,15 +87,15 @@ Instructions for users:
          - add, remove, and retrieve believes.
          - simulate the execution of simple requests.
          
-         Run the file "main-beta.py" and  type:
+      Run the file "main-beta.py" and  type:
          
          -> start [address] [port]   # to start the application. By default it will listen on localhost, port 8080.          
          
-         You can change the listening address and port by typing:
+      You can change the listening address and port by typing:
          
          ->set address port
          
-         Wait for it to load. When finished, you can type:
+      Wait for it to load. When finished, you can type:
          
          -> stop  #stop the assistant
          -> exit  #terminate the assistant
@@ -102,28 +103,28 @@ Instructions for users:
    3.2.A) Then, run the file "client-test.py" in "target/python/test". It  will add a device, a user, a configuration, request a simple task 
         and then it will remove the device, the configuration,  and the user previously added.
          
-        Or
+      Or
         
    3.2.B) Edit the file "rasb-light-agent-beta.py" in "target/python" that simulates a raspberry PI working with OASIS by changing the variables
          "address" and "port" with the ones set in the domotic assistant. Run the file and type the following commands:
           
           -> start           # to start the application that will listen on localhost, port 8087. 
           
-          # To change the address and port modify the ontology rasb-lightagent.owl in "target\ontologies\test\rasb" or type 
+      To change the address and port modify the ontology rasb-lightagent.owl in "target\ontologies\test\rasb" or type 
           
           -> start [address] [port]
                            
-          Then, type
+      Then, type
    
           -> set hub [address] [port] # to specify the address and port of the assistant that by default is set to localhost, 8000
           -> install                  # to transmit the behavior of the agent to the assistant
           -> status                   # to know the status of the device
           -> check install            # to verify that the device has been recognized by the assistant
           
-          From now on, any compatible request will be displayed by the agent with a print.
+      From now on, any compatible request will be displayed by the agent with a print.
           
-          Run the file "rasb-user-beta.py" which add a user, a configuration, request a simple task and then it will remove the configuration and 
-          the user previously added.
+      Run the file "rasb-user-beta.py" which add a user, a configuration, request a simple task and then it will remove the configuration and 
+      the user previously added.
           
           -> uninstall #to remove the behavior of the agent from the assistant knowledge base
           
@@ -140,7 +141,8 @@ Instructions for developers:
      -"g" is the RDFLib graph of the response received from the assistant.
      -"execution" is the iri of the individual representing the execution activity received from the assistant. 
      
-    Let us call such class "CustomAgentServerManager"
+   
+  Let us call such class "CustomAgentServerManager"
      
   2) Instantiate an agent by writing:
      
@@ -161,12 +163,13 @@ Instructions for developers:
      
   3)Instantiate the Console (located in lib/console.py) by writing
   
-    Console(agent, [command1, command2, ...], where
+    Console(agent, [command1, command2, ...], 
+   where
     
     -"agent" is the agent to which the console is attached.
     -"command1", "command2", ... are the console commands instantiated at step 2. A set of defualt command can be found on file "consolecommand.py".     
     
-    Write console.run() to run the console. See the file target/rasb-light-agent-beta.py for an example.
+   Write console.run() to run the console. See the file target/rasb-light-agent-beta.py for an example.
      
 
    
