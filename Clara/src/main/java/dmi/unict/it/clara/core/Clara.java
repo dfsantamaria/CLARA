@@ -867,6 +867,10 @@ public class Clara extends OntologyCore
         refreshOntology(this.getDataBehaviorOntology());
     }
    
+    public void refreshDataRequest() throws OWLOntologyStorageException, OWLOntologyCreationException
+    {
+        refreshOntology(this.getDataRequestOntology());
+    }
     /**
      * Add an user from its IRI
      * @param iri the IRI of the user
@@ -1515,7 +1519,7 @@ public class Clara extends OntologyCore
         OntologyModel res=null;
           try
             {        
-        this.getMainManager().ontologies().forEach(x->ontology.addAxioms(x.axioms()));
+        //this.getMainManager().ontologies().forEach(x->ontology.addAxioms(x.axioms()));
         QueryExecution execQ = this.createQuery(ontology, query);
         res=this.performConstructQuery(execQ);
         this.addDataToDataRequest(res.axioms());
@@ -1839,15 +1843,16 @@ public class Clara extends OntologyCore
         try 
         {
             ontology.imports().forEach(o->{
-                ontology.addAxioms(o.axioms());
+                ontology.addAxioms(o.axioms());                
             });                
-            syncReasoner(ontology, null);                
-            this.addAxiomsToOntology(this.getDataRequestOntology(), ontology.axioms());            
+            syncReasoner(ontology, null);            
+            //this.addAxiomsToOntology(this.getDataRequestOntology(), ontology.axioms());  
+             this.addDataToDataRequest(ontology.axioms());
         } 
-        catch (OWLOntologyStorageException ex)
+        catch (OWLOntologyStorageException | OWLOntologyCreationException  ex)
         {
             return toreturn;
-        }       
+        } 
         String IRIrequest = ontology.getOntologyID().getOntologyIRI().get().toString();
         String prefix = getQueryPrefix(IRIrequest);
         query+=prefix;       
@@ -2000,16 +2005,17 @@ public class Clara extends OntologyCore
        //    System.out.println(q.toString());
        //   }
        
-          OWLOntology o= this.getMainManager().createOntology();
-          o.addAxioms(this.getDataBehaviorOntology().axioms());
-           
+          OWLOntology o= this.getMainManager().createOntology();          
+          this.getDataBehaviorOntology().imports().forEach(ont-> o.addAxioms(ont.axioms()));         
+          
           OntologyModel m =  performQuery(o, subquery);
                
           OWLOntology out = getMainManager().createOntology(m.axioms());
+           
        //   OWLOntology out = getMainManager().createOntology();
           toreturn[0]=new ByteArrayOutputStream();
           out.saveOntology(toreturn[0]);       
-          addAxiomsToOntology(this.getDataBeliefOntology(), out.axioms());
+          addAxiomsToOntology(this.getDataRequestOntology(), out.axioms());
           
           this.getMainManager().removeOntology(out);
           

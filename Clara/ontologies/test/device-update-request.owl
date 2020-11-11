@@ -12,90 +12,82 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.dmi.unict.it/oasis-abox.owl</Import>
     <Import>http://www.dmi.unict.it/oasis.owl</Import>
-    <Declaration>
-        <Class IRI="http://www.dmi.unict.it/oasis.owl#Device"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.dmi.unict.it/oasis.owl#GoalDescription"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.dmi.unict.it/oasis.owl#OntologyDescriptionObject"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.dmi.unict.it/oasis.owl#PlanDescription"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.dmi.unict.it/oasis.owl#Space"/>
-    </Declaration>
     <Declaration>
         <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskDescription"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskParameter"/>
+        <NamedIndividual IRI="#light-update-req-ontology"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#consistsOfGoalDescription"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#consistsOfTaskDescription"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasObjectType"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasTaskObject"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasTaskOperator"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasTaskParameter"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#requests"/>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#Space"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.dmi.unict.it/oasis.owl#descriptionProvidedByURL"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#alan-task-1-1-1-kitchen"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#light-update-req-goal"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#light-update-req-ontology"/>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasTaskOperator"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#light-update-req-plan"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#alan-task-1-1-1-kitchen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#GoalDescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#consistsOfGoalDescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasObjectType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasTaskParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#PlanDescription"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#light-update-req-task"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#light-update-req-task-inputparameter"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/lightagent.owl#light-device"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#light-update-req-task-object"/>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#consistsOfTaskDescription"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#light-update-req-task-operator"/>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasTaskObject"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.dmi.unict.it/lightagent.owl#lightagent"/>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskParameter"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#agent_device_type"/>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#Device"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#light-update-req-goal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#OntologyDescriptionObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#requests"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#device_type"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#home_object_type"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#ontology_description_object_type"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#update"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#update"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#ontology_description_object_type"/>
     </Declaration>
     <ClassAssertion>
         <Class IRI="http://www.dmi.unict.it/oasis.owl#Space"/>
@@ -110,6 +102,10 @@
         <NamedIndividual IRI="#light-update-req-ontology"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskActualInputParameter"/>
+        <NamedIndividual IRI="#light-update-req-ontology"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="http://www.dmi.unict.it/oasis.owl#PlanDescription"/>
         <NamedIndividual IRI="#light-update-req-plan"/>
     </ClassAssertion>
@@ -118,24 +114,8 @@
         <NamedIndividual IRI="#light-update-req-task"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskActualInputParameter"/>
-        <NamedIndividual IRI="#light-update-req-task-inputparameter"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskObject"/>
-        <NamedIndividual IRI="#light-update-req-task-object"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskOperator"/>
-        <NamedIndividual IRI="#light-update-req-task-operator"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="http://www.dmi.unict.it/oasis.owl#Device"/>
-        <NamedIndividual IRI="http://www.dmi.unict.it/lightagent.owl#lightagent"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.dmi.unict.it/oasis.owl#Action"/>
-        <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#agent_device_type"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/lightagent.owl#light-device"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#consistsOfTaskDescription"/>
@@ -155,51 +135,40 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasTaskActualInputParameter"/>
         <NamedIndividual IRI="#light-update-req-task"/>
-        <NamedIndividual IRI="#light-update-req-task-inputparameter"/>
+        <NamedIndividual IRI="#light-update-req-ontology"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasTaskObject"/>
         <NamedIndividual IRI="#light-update-req-task"/>
-        <NamedIndividual IRI="#light-update-req-task-object"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/lightagent.owl#light-device"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasTaskOperator"/>
         <NamedIndividual IRI="#light-update-req-task"/>
-        <NamedIndividual IRI="#light-update-req-task-operator"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#refersAsNewTo"/>
-        <NamedIndividual IRI="#light-update-req-task-inputparameter"/>
-        <NamedIndividual IRI="#light-update-req-ontology"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#refersExactlyTo"/>
-        <NamedIndividual IRI="#light-update-req-task-object"/>
-        <NamedIndividual IRI="http://www.dmi.unict.it/lightagent.owl#lightagent"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#refersExactlyTo"/>
-        <NamedIndividual IRI="#light-update-req-task-operator"/>
         <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#update"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasAgentType"/>
-        <NamedIndividual IRI="http://www.dmi.unict.it/lightagent.owl#lightagent"/>
-        <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#agent_device_type"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/lightagent.owl#light-device"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#device_type"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasObjectType"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/lightagent.owl#light-device"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#home_object_type"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#requests"/>
-        <NamedIndividual IRI="http://www.dmi.unict.it/lightagent.owl#lightagent"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/lightagent.owl#light-device"/>
         <NamedIndividual IRI="#light-update-req-plan"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.dmi.unict.it/oasis.owl#descriptionProvidedByIRI"/>
         <NamedIndividual IRI="#light-update-req-ontology"/>
-        <Literal>http://www.dmi.unict.it/lightagent.owl</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.dmi.unict.it/lightagent.owl</Literal>
     </DataPropertyAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->

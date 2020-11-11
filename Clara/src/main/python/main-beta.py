@@ -213,7 +213,7 @@ class Clara(Thread):
                 else:
                     print("Device", value, "added.")
                     res = self.transmitExecutionStatus(execution, executer,
-                                                       URIRef(self.oasisabox + "succeded_status_type"), addr, sock,
+                                                       URIRef(self.oasisabox + "succeeded_status_type"), addr, sock,
                                                        server_socket)
 
             elif actions == URIRef(self.oasisabox + "update"):
@@ -227,7 +227,7 @@ class Clara(Thread):
                 else:
                     print("Device", value, "updated.")
                     res = self.transmitExecutionStatus(execution, executer,
-                                                       URIRef(self.oasisabox + "succeded_status_type"), addr, sock,
+                                                       URIRef(self.oasisabox + "succeeded_status_type"), addr, sock,
                                                        server_socket)
 
             elif actions == URIRef(self.oasisabox + "uninstall"):  # uninstallation task
@@ -241,7 +241,7 @@ class Clara(Thread):
                 else:
                     print("Device", Utils.retrieveEntityName(requester), "correctly removed")
                     res = self.transmitExecutionStatus(execution, executer,
-                                                       URIRef(self.oasisabox + "succeded_status_type"), addr, sock,
+                                                       URIRef(self.oasisabox + "succeeded_status_type"), addr, sock,
                                                        server_socket)
 
             elif actions == URIRef(self.oasisabox + "add") or actions == URIRef(
@@ -260,7 +260,7 @@ class Clara(Thread):
                                                                    server_socket)
                             else:
                                 res = self.transmitExecutionStatus(execution, executer,
-                                                                   URIRef(self.oasisabox + "succeded_status_type"),
+                                                                   URIRef(self.oasisabox + "succeeded_status_type"),
                                                                    addr, sock, server_socket)
                                 print("User", value, "added.")
                         elif actions == URIRef(self.oasisabox + "remove"):
@@ -273,7 +273,7 @@ class Clara(Thread):
                                                                    server_socket)
                             else:
                                 res = self.transmitExecutionStatus(execution, executer,
-                                                                   URIRef(self.oasisabox + "succeded_status_type"),
+                                                                   URIRef(self.oasisabox + "succeeded_status_type"),
                                                                    addr, sock, server_socket)
                                 print("User", Utils.retrieveEntityName(requester), "correctly removed")
                     elif thetype == URIRef(self.oasisabox + "user_configuration_type"):  # adding or removing user
@@ -288,7 +288,7 @@ class Clara(Thread):
                                                                    server_socket)
                             else:
                                 res = self.transmitExecutionStatus(execution, executer,
-                                                                   URIRef(self.oasisabox + "succeded_status_type"),
+                                                                   URIRef(self.oasisabox + "succeeded_status_type"),
                                                                    addr, sock, server_socket)
                                 print("Configuration added:", value, ".")
                         elif actions == URIRef(self.oasisabox + "remove"):
@@ -301,7 +301,7 @@ class Clara(Thread):
                                                                    server_socket)
                             else:
                                 res = self.transmitExecutionStatus(execution, executer,
-                                                                   URIRef(self.oasisabox + "succeded_status_type"),
+                                                                   URIRef(self.oasisabox + "succeeded_status_type"),
                                                                    addr, sock, server_socket)
                                 print("Configuration", Utils.retrieveEntityName(requester), "correctly removed.")
                     elif thetype == URIRef(self.oasisabox + "belief_description_object_type"):
@@ -316,7 +316,7 @@ class Clara(Thread):
                                                                    server_socket)
                             else:
                                 res = self.transmitExecutionStatus(execution, executer,
-                                                                   URIRef(self.oasisabox + "succeded_status_type"),
+                                                                   URIRef(self.oasisabox + "succeeded_status_type"),
                                                                    addr, sock, server_socket)
                                 print("Belief  correctly added")
                         elif actions == URIRef(self.oasisabox + "remove"):
@@ -329,7 +329,7 @@ class Clara(Thread):
                                                                    server_socket)
                             else:
                                 res = self.transmitExecutionStatus(execution, executer,
-                                                                   URIRef(self.oasisabox + "succeded_status_type"),
+                                                                   URIRef(self.oasisabox + "succeeded_status_type"),
                                                                    addr, sock, server_socket)
                                 print("Belief correctly removed")
                     else:
@@ -362,7 +362,7 @@ class Clara(Thread):
                                                                server_socket)
                         else:
                             res = self.transmitExecutionStatus(execution, executer,
-                                                               URIRef(self.oasisabox + "succeded_status_type"), addr,
+                                                               URIRef(self.oasisabox + "succeeded_status_type"), addr,
                                                                sock, server_socket)
                             print("Belief retrieved:\n" + value)
                     else:
@@ -377,7 +377,7 @@ class Clara(Thread):
                         isPresent = self.clara.checkDevice(requester)
                         if isPresent == 1:
                             res = self.transmitExecutionStatus(execution, executer,
-                                                               URIRef(self.oasisabox + "succeded_status_type"), addr,
+                                                               URIRef(self.oasisabox + "succeeded_status_type"), addr,
                                                                sock,
                                                                server_socket)
                             print("Device ", requester, " is installed")
@@ -428,7 +428,7 @@ class Clara(Thread):
                         if belief is None:
                             print("A belief from " + execution + " cannot be added")
                         else:
-                            entrust_status = URIRef(self.oasisabox + "succeded_status_type")
+                            entrust_status = URIRef(self.oasisabox + "succeeded_status_type")
                         s = Graph()
                         # original request status and perform
                         Utils.addPerformInfo(s, self.oasis, executer, execution)

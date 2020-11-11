@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.dmi.unict.it/user-request-bis.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.dmi.unict.it/user-request-bis.owl">
+    <Prefix name="" IRI="http://www.dmi.unict.it/user-request.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.dmi.unict.it/oasis.owl</Import>
+    <Declaration>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#CompositeValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#GoalDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#PlanDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#Space"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskActualInputParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskObjectTemplate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#User"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#consistsOfGoalDescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#consistsOfTaskDescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasSpaceSpan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasTaskActualInputParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasTaskObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasTaskOperator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#requests"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.dmi.unict.it/oasis.owl#hasDataValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#device_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#turn_on"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.dmi.unict.it/oasis.owl#LightObjectType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.dmi.unict.it/oasis.owl#kitchen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.dmi.unict.it/ontoas/alan.owl#alan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alan-1-1-1-taskObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alan-1-1-1-taskOperator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alan-1-1-1-taskinputparameter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alan-goal-1-1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alan-plan-1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alan-task-1-1-1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alan-task-1-1-1-kitchen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alan-task-1-1-1-object"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#turn-parameter"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#User"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/ontoas/alan.owl#alan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskObject"/>
+        <NamedIndividual IRI="#alan-1-1-1-taskObject"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskOperator"/>
+        <NamedIndividual IRI="#alan-1-1-1-taskOperator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskActualInputParameter"/>
+        <NamedIndividual IRI="#alan-1-1-1-taskinputparameter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#GoalDescription"/>
+        <NamedIndividual IRI="#alan-goal-1-1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#PlanDescription"/>
+        <NamedIndividual IRI="#alan-plan-1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#TaskDescription"/>
+        <NamedIndividual IRI="#alan-task-1-1-1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#ReferenceTemplate"/>
+        <NamedIndividual IRI="#alan-task-1-1-1-kitchen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#Space"/>
+        <NamedIndividual IRI="#alan-task-1-1-1-kitchen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#Device"/>
+        <NamedIndividual IRI="#alan-task-1-1-1-object"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#ReferenceTemplate"/>
+        <NamedIndividual IRI="#alan-task-1-1-1-object"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.dmi.unict.it/oasis.owl#CompositeValue"/>
+        <NamedIndividual IRI="#turn-parameter"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#requests"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/ontoas/alan.owl#alan"/>
+        <NamedIndividual IRI="#alan-plan-1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#refersAsNewTo"/>
+        <NamedIndividual IRI="#alan-1-1-1-taskObject"/>
+        <NamedIndividual IRI="#alan-task-1-1-1-object"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#refersExactlyTo"/>
+        <NamedIndividual IRI="#alan-1-1-1-taskOperator"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/oasis-abox.owl#turn_on"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#refersAsNewTo"/>
+        <NamedIndividual IRI="#alan-1-1-1-taskinputparameter"/>
+        <NamedIndividual IRI="#turn-parameter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#consistsOfTaskDescription"/>
+        <NamedIndividual IRI="#alan-goal-1-1"/>
+        <NamedIndividual IRI="#alan-task-1-1-1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#consistsOfGoalDescription"/>
+        <NamedIndividual IRI="#alan-plan-1"/>
+        <NamedIndividual IRI="#alan-goal-1-1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasTaskActualInputParameter"/>
+        <NamedIndividual IRI="#alan-task-1-1-1"/>
+        <NamedIndividual IRI="#alan-1-1-1-taskinputparameter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasTaskObject"/>
+        <NamedIndividual IRI="#alan-task-1-1-1"/>
+        <NamedIndividual IRI="#alan-1-1-1-taskObject"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasTaskOperator"/>
+        <NamedIndividual IRI="#alan-task-1-1-1"/>
+        <NamedIndividual IRI="#alan-1-1-1-taskOperator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasType"/>
+        <NamedIndividual IRI="#alan-task-1-1-1-kitchen"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/oasis.owl#kitchen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasSpaceSpan"/>
+        <NamedIndividual IRI="#alan-task-1-1-1-object"/>
+        <NamedIndividual IRI="#alan-task-1-1-1-kitchen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.dmi.unict.it/oasis.owl#hasType"/>
+        <NamedIndividual IRI="#alan-task-1-1-1-object"/>
+        <NamedIndividual IRI="http://www.dmi.unict.it/oasis.owl#LightObjectType"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.dmi.unict.it/oasis.owl#hasDataValue"/>
+        <NamedIndividual IRI="#turn-parameter"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

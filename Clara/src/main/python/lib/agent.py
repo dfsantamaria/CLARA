@@ -50,7 +50,7 @@ class AgentServerManager(Thread):
             return 0
         self.performOperation(g, execution)
         #
-        status = self.agent.iriSet[0] + "#" + "succeded_status_type"
+        status = self.agent.iriSet[0] + "#" + "succeeded_status_type"
         timestamp = Utils.getTimeStamp()
         iri = str(execution).rsplit('.', 1)[0] + "-updatestatus" + timestamp + ".owl"
         agent = URIRef(self.agent.iriSet[2] + "#" + self.agent.agentInfo[0])
@@ -188,7 +188,7 @@ class Agent(Thread):
             return 0
         g = rdflib.Graph()
         g.parse(data=received)
-        if Utils.checkStatus(g, self.iriSet[0] + "#", self.iriSet[1] + "#succeded_status_type") == 1:
+        if Utils.checkStatus(g, self.iriSet[0] + "#", self.iriSet[1] + "#succeeded_status_type") == 1:
             return 1
         return 0
 
@@ -246,7 +246,7 @@ class Agent(Thread):
             return 0
         g = rdflib.Graph()
         g.parse(data=received)
-        if Utils.checkStatus(g, self.iriSet[0] + "#", self.iriSet[1] + "#succeded_status_type") == 1:
+        if Utils.checkStatus(g, self.iriSet[0] + "#", self.iriSet[1] + "#succeeded_status_type") == 1:
             print("Device installation confirmed by the hub")
         else:
             print("Device installation not confirmed by the hub")
@@ -286,7 +286,7 @@ class Agent(Thread):
         g = rdflib.Graph()
         g.parse(data=received)
 
-        if Utils.checkStatus(g, self.iriSet[0] + "#", self.iriSet[1] + "#succeded_status_type") == 1:
+        if Utils.checkStatus(g, self.iriSet[0] + "#", self.iriSet[1] + "#succeeded_status_type") == 1:
             print("Device uninstallation confirmed by the hub")
         else:
             print("Device uninstallation not confirmed by the hub")
@@ -330,7 +330,7 @@ class Agent(Thread):
 
         agent = URIRef(self.iriSet[2] + "#" + self.agentInfo[0])
         reqGraph.add(
-            (agent, URIRef(self.iriSet[0] + "#hasType"), URIRef(self.iriSet[1] + "#device_type")))  # task object
+            (agent, URIRef(self.iriSet[0] + "#hasAgentType"), URIRef(self.iriSet[1] + "#agent_device_type")))  # task object
         reqGraph.add((agent, RDF.type, URIRef(self.iriSet[0] + "#Device")))  # has request
         parameter = URIRef(iri + "#parameter")  # the parameter
         Utils.generateRequest(reqGraph, iri, self.iriSet[0] + "#", agent, None, "#planDe-" + timestamp,
@@ -354,7 +354,7 @@ class Agent(Thread):
             return 0
         g = rdflib.Graph()
         g.parse(data=received)
-        if Utils.checkStatus(g, self.iriSet[0] + "#", self.iriSet[1] + "#succeded_status_type") == 1:
+        if Utils.checkStatus(g, self.iriSet[0] + "#", self.iriSet[1] + "#succeeded_status_type") == 1:
             print("Device update confirmed by the hub")
         else:
             print("Device update not confirmed by the hub")
