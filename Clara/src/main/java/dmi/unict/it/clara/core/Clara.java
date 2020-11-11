@@ -99,6 +99,7 @@ public class Clara extends OntologyCore
     public Clara()
     {
         super("ProfontoLog");
+        this.getLogger().log(Level.FINE, "Logging Started");
         devices = new HashMap<>();
         devConfig = new HashMap<>();
         users = new HashMap<>();
@@ -1837,8 +1838,7 @@ public class Clara extends OntologyCore
         if(ontology==null) //ontology already present in satellite data, otherwise add
         {
             return toreturn;            
-        }
-        
+        }       
        // Stream<OWLAxiom> copyOnto=ontology.axioms(); //copy of the request axioms       
         try 
         {
@@ -1851,6 +1851,7 @@ public class Clara extends OntologyCore
         } 
         catch (OWLOntologyStorageException | OWLOntologyCreationException  ex)
         {
+            this.getLogger().log(Level.SEVERE, null, ex);
             return toreturn;
         } 
         String IRIrequest = ontology.getOntologyID().getOntologyIRI().get().toString();
@@ -2027,12 +2028,9 @@ public class Clara extends OntologyCore
           
           
         } 
-        catch (OWLOntologyCreationException ex)
+        catch (OWLOntologyCreationException | OWLOntologyStorageException ex)
         {
-           return null;
-        } 
-        catch (OWLOntologyStorageException ex)
-        {
+           this.getLogger().log(Level.SEVERE, null, ex); 
            return null;
         }
         return toreturn;

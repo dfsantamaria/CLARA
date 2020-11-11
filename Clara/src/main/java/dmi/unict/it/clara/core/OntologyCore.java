@@ -131,10 +131,11 @@ public class OntologyCore
         try {//
             logSys=Logger.getLogger(logName);
             FileHandler file = new FileHandler(logName+".log", limit,1 , true);  
-          
+            file.setLevel(Level.ALL);
             SimpleFormatter simple = new SimpleFormatter();
             file.setFormatter(simple);
-            logSys.addHandler(file); 
+            logSys.addHandler(file);
+            logSys.setLevel(Level.ALL);           
             logSys.setUseParentHandlers(false);
         } 
         catch (IOException | SecurityException ex)
