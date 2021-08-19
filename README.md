@@ -7,17 +7,17 @@ Daniele Francesco Santamaria - santamaria@dmi.unict.it,
 Corrado Santoro - santoro@dmi.unict.it
 
 
-CLARA
+# CLARA
 
 CLARA is a domotic system based on the ontology OASIS - an Ontology for Agent Systems and Integration of Services 
 (http://www.dmi.unict.it/~santamaria/projects/oasis/oasis.php).
 
-Documentation:
+## Documentation
 
 - See https://www.overleaf.com/read/mjxhtwpxhmxk on Overleaf (only read permission).
 
 
-Publications:
+## Publications
 
 -Ontological Smart Contracts in OASIS: Ontology forAgents, Systems, and Integration of Services Domenico Cantone, Carmelo Fabio Longo, Marianna Nicolosi-Asmundo, Daniele Francesco Santamaria, Corrado Santoro
 To app. in: Proceedings of IDC 2021, The 14th International Symposium on Intelligent Distributed Computing, 16-18 September, 2021, Scilla, Reggio Calabria, Italy.
@@ -26,15 +26,15 @@ To app. in: Proceedings of IDC 2021, The 14th International Symposium on Intelli
  Marianna Nicolosi-Asmundo, Daniele Francesco Santamaria, Corrado Santoro. Proceedings of the 20th Workshop From Objects to Agents, 
  26-28 June, 2019, Parma, Italy, CEUR Workshop Proceedings, ISSN 1613-0073, Vol. 2404, pp. 119--126.
 
-Presentations:
+## Presentations
 - WOA 2019: shorturl.at/hjwCD
 
 
-Versioning:
+## Versioning
 -Version 1.0 CLARA is the new version of the domotic assistant Prof-Onto: https://github.com/dfsantamaria/ProfOnto .
 
 
-Disclaimer:
+## Disclaimer
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by 
 the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
@@ -59,7 +59,7 @@ solely responsible for any damage to your computer system or loss of data that r
 whether oral or written, obtained by you from the BGS or from the BGS web site shall create any warranty for the software.
 
 
-Instructions for users:
+## Instructions for users:
 
 - Notice that Python 3.7 is required.
 
@@ -132,7 +132,7 @@ Instructions for users:
           
           -> exit # to close the console
      
-Instructions for developers:
+## Instructions for developers:
 
   1) Inherit the class AgentServerManager (located in lib/agent.py) and implement the virtual function 
   
@@ -173,7 +173,7 @@ Instructions for developers:
      
 
    
-USING OASIS - Ontology Smart Contract Utility.
+## USING OASIS - Ontology Smart Contract Utility.
    
    OSCUtility allows to easily access the functions of the Ethereum smart contract that manages the ontological smart contract provided by OASIS. The smart contract is compliant with the 
    non-fungible token standard ERC721 and accessible at the address: 0x36194ab80f7649572cab9ec524950df32f638b08. 
