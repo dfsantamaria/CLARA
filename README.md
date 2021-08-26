@@ -1,4 +1,6 @@
-Copyright 2019 Department of Mathematics and Computer Science, University of Catania, Italy.
+## Licensing information
+
+Copyright (C) 2019 Department of Mathematics and Computer Science, University of Catania, Italy.
 
 Domenico Cantone - domenico.cantone@unict.it, 
 Carmelo Fabio Longo - fabio.longo@unict.it, 
@@ -6,6 +8,7 @@ Marianna Nicolosi Asmundo - nicolosi@dmi.unict.it,
 Daniele Francesco Santamaria - santamaria@dmi.unict.it, 
 Corrado Santoro - santoro@dmi.unict.it
 
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version. This program is distributed in the hope that it will be useful,  but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  You should have received a copy of the GNU General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # CLARA
 
