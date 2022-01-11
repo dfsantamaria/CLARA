@@ -1,0 +1,27 @@
+Using epirus:
+
+epirus generate solidity generate --binFile=test.bin --abiFile=test.abi --outputDir=src/main/java --package=com.yourcompany.web3.generated
+
+
+Old web3j cli
+
+- Install Web3j-cli (this is the command for Windows)
+     Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/web3j/web3j-installer/master/installer.ps1'))
+
+- Install Solidity compiler version 0.6.4
+
+- Install Ganache-GUI
+
+- Eventualy, install ganache-cli:
+     npm install -g ganache-cli
+
+- Generate the java wrapper for the contract with web3j-cli (Bin file must contain only binary data)
+     web3j solidity generate -a oasisosc.abi -b oasisosc.bin -o . -p dmi.unict.it.oasis.ethereumcode
+  
+
+-  Initialize geth
+      geth --datadir=./chaindata/ init ./genesis.json
+   Start geth
+      geth --datadir=./chaindata/ --rpc console
+
+
